@@ -11,5 +11,79 @@
   <body>
     <!-- 04 - Form Exercise -->
     <!-- Add your code below -->
+    <p>04 - Form</p>
+    <div id = "A">
+      <div id = "B">
+        <h1>INTRO SURVEY</h1>
+      </div>
+      <form>
+        <div class = "box">
+          <div >
+            <label for = "name" class="i">Name <span>(required)</span></label>
+          </div>
+          <div >
+            <input type="text" id = "name" class="j"  placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class = "box">
+          <div >
+            <label for = "email" class="i">Email <span>(required)</span></label>
+          </div>
+          <div >
+            <input type="email" id = "email" class="j" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class = "box">
+          <div >
+            <label for = "status" class="i">Regestration Status:</label>
+          </div>
+          <div >
+            <select name="status" id="status">
+              <option>Choose an Option</option>
+              <option>Waitlist</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class = "box">
+          <div >
+            <label for = "section" class="i">Class Section:</label>
+          </div>
+          <div >
+            <input type="radio" id="410p" name="section" value="410p">
+            <label for="CS 410p" class="course">CS 410P</label>
+            <input type="radio" id="510" name="section" value="510">
+            <label for="CS 510" class="course">CS 510</label>
+          </div>
+        </div>
+        <div class = "box">
+          <div >
+            <label for = "section" class="i">Have you taken any of the following courses?</label>
+          </div>
+          <div >
+            <input type="checkbox" id="subject1" name="subject1" value="subject1">
+            <label for="subject1"> Programming Languages</label><br>
+            <input type="checkbox" id="subject2" name="subject2" value="subject2">
+            <label for="subject2"> Operating Systems</label><br>
+            <input type="checkbox" id="subject3" name="subject3" value="subject3">
+            <label for="subject3"> Full Stack Web Development</label><br><br>
+          </div>
+        </div>
+        <div class = "box">
+          <div >
+            <label for = "text" class="i">Anything else?</label>
+          </div>
+          <div >
+            <textarea rows="5">
+
+            </textarea>
+          </div>
+        </div>
+        <div>
+          <input type="submit" value="Submit" class="k" id="submit">
+          <input type="reset" value="Reset" class="l" id="reset">
+        </div>
+      </form>
+    </div>
   </body>
 </html>
