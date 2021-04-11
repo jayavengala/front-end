@@ -1,1 +1,44 @@
 /* Add your code here */
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  figure {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+  figcaption {
+    font-size: 80%;
+  }
+    
+  .B {
+    filter: grayscale(100%);
+    }
+
+  
+  .C {
+    filter: blur(2px);
+    }
+  
+  .D {
+    filter: invert(100%);
+    }
+  
+  .E {
+    filter: brightness(50%);
+    }
+  
+  .F {
+    filter: saturate(190%);
+    }
+  .G {
+    filter: sepia(100%);
+    }
+  
+  .H {
+    filter: blur(5px) grayscale(1) opacity(20);
+    }
+  
