@@ -1,6 +1,41 @@
-/* The colors used include:
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #555;
+  }
+  /* The colors used include:
     - teal
     - rgb alpha value of the color above
-*/
+    */
 
 /* Add your code here */
+  
+  
+  #A {
+    width:50%;
+    margin-left: 25%;
+    justify-content: center;
+    display: flex;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: rgb(4, 92, 99);
+    color: white;
+    padding: 10px;
+  }
+  
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  tr:not(:first-child):hover {
+    cursor: pointer;
+    background-color: rgb(166, 225, 230); ;
+  }
