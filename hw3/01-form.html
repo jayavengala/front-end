@@ -6,15 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Form Exercise</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw1/04-form.css" />
     <script defer src="01-form.js"></script>
   </head>
   <body class="bg-dark text-dark">
     <main>
-      <h1>Contact Form</h1>
-      <form action="">
-        <!-- Step 1 - Insert your previous form here -->
-        <!-- Step 2 - Address any responsiveness and/or accessibility issues -->
-      </form>
+      <div class="form">
+        <h1>INTRO SURVEY</h1>
+        <form onsubmit="event.preventDefault(); Print()" action="">
+          <label for = "name"><b>Name</b><span>(required)</span></label>
+          <br/>
+          <input type="text" id="name" name="name" required/>
+          <br/>
+          <label for = "email"><b>Email</b><span>(required)</span></label>
+          <br/>
+          <input type="email" id="email" name="email" required/>
+          <br/>
+          <label for = "status"><b>Regestration Status:</b></label>
+          <br/>
+          <select name="status" id="status">
+            <option>Choose an Option</option>
+            <option>Waitlist</option>
+            <option>Other</option>
+            <option>Registered</option>
+          </select>
+          <br/>
+          <fieldset>
+            <legend><b>Class Section:</b></legend>
+            <input type="radio" id="410" name="section" value="CS 410p"/>
+            <label for="410">CS 410P</label>
+            <input type="radio" id="510" name="section" value="CS 510"/>
+            <label for="510">CS 510</label>
+          </fieldset>          
+          <br/>
+          <fieldset>
+            <legend><b>Have you taken any of the following courses?</b></legend>
+            <input type="checkbox" id="subject1" name="courses" value="Programming Languages">
+            <label for="subject1">Programming Languages</label><br/>
+            <input type="checkbox" id="subject2" name="courses" value="Operating Systems">
+            <label for="subject2"> Operating Systems</label><br>
+            <input type="checkbox" id="subject3" name="courses" value="Full Stack Web Development">
+            <label for="subject3"> Full Stack Web Development</label>
+          </fieldset>
+          <br/>
+          <label for = "text"><b>Anything else?</b></label><br/>
+          <textarea rows="4" id="comment" class="input-style"></textarea>
+          <br/><br/>
+            <input type="submit" name="submit" value="Submit" class="sub" id="submit"/>
+            <input type="reset" name="reset" value="Reset" class="reset" id="reset"/>
+        </form>
+      </div>
     </main>
   </body>
-</html>
