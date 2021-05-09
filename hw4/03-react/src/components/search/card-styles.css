@@ -1,0 +1,27 @@
+.card-container {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-color: rgb(15, 11, 0);
+    color: white;
+    border : 1px solid grey;
+    border-radius: 15px;
+    width: 21%;
+    padding: 15px;
+    font-size : 19px;
+    cursor: pointer;   
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    background-color: rgb(14, 13, 13);
+}
+
+.image {
+    height: 70%;
+}

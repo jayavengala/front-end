@@ -1,0 +1,17 @@
+.card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around ;
+                border: 2px solid black;
+                /* background-image: url('../home/got.jpg'); */
+                padding: 25px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                margin-top: -10px;
+              
+              
+}
